@@ -512,10 +512,28 @@ Q What next?
 A Right click on the code editor===> Run as java application. We will be able to see
 the output on the console window.
 
-
+Q Do we have any shortcut for System.out.println() in IDE?
+A Yes ... write syso and press ctrl+spacebar.
 
 ------------------------------------------------------------------------------------------------
 
+So suppose we created HelloWorld.java
+
+  class HelloWorld {
+   public static void main(String args[]){
+    System.out.println("Hello");
+   }
+  }
+
+ javac HelloWorld.java
+
+   |
+   |
+ HelloWorld.class
+   |
+   |
+java HelloWorld
+  
 
 
 
