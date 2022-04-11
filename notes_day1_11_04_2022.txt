@@ -372,10 +372,149 @@ class Welcome {
 
 
 --------------------------------------------------------------------------------------------------------------
+Q Where to save the code and with what file name and extension?
+A The first part of the filename can be anything of our choice ( avoid
+  having space in between) and keep the extension as .java.
+
+Example, we can keep the file name and class name same or different.
+
+Welcome.java ( java is the extension of the file which is holding the code).
+
+class Welcome {
+     public static void main(String args[]) {
+     System.out.println("Hello");
+    }
+}
+
+Even it is possible to keep the file name and class name different.
+
+So suppose , if we are giving the file name as Hello.java
+
+class Welcome {
+   public static void main(String args[]) {
+     System.out.println("Hello");
+    }
+}
+
+
+We have a case where we have to keep the file name and class name same
+otherwise the program will show compilation error. The situation in which
+we have to keep the class name and file name same, if we declare the class
+with public keyword.
+
+public class Welcome {
+    public static void main(String args[]) {
+    System.out.println("Hello");
+   }
+ }
+
+In the above scenario we have to give the file name as Welcome.java. 
+We cannot give any other name to the file as the class is declared as public.
+
+SO IF THE CLASS IS DECLARED AS PUBLIC , FILE NAME AND CLASS NAME SHOULD BE SAME.
+---------------------------------------------------------------------------------------------------------------
+Whenever we are writing the java code and not using any IDE, we have
+to first install JDK ( Java Development Kit) in the system. Without the 
+Java development kit , we wont be allowed to compile our code. 
+
+javac.exe ( So when we install the development kit ,we get the javac.exe
+(which is a java compiler)
+
+javac Welcome.java  ( while compiling we mention javac <filename>
+    |
+    |
+    |
+ Welcome.class(bytecode) [ bytecode is an intermediate language and which is somewhere between high level 
+                          language and low level language ]
+    |
+    |
+    |
+java Welcome ( java.exe is the interpreter which is in the process of converting
+               bytecode into machine lavel language )    ( while interpreting we mentiom java <classname> )
+
+
+--------------------------------------------------------------------------------------------------------------
+JRE (IF we install JRE , we are only able to execute the code)
+But if we install JDK we can use the tools for compiling the code and
+also to execute(conversion from high level language to low level language/interpret the java code)
+---------------------------------------------------------------------------------------------------------------
+Q Than what is the usage of IDE?
+A IDE ( Integrated Development Environment ). This is the software through which we can compile, interpret,debug, test our java code. So basically IDE uses the compiler and interpreter to compile and
+interpret our code)
+
+
+Q How we can install JDK in our system? ( Assuming we are installing JDK17 through installer)
+A https://www.oracle.com/java/technologies/downloads/#jdk17-windows
+
+Q What we do after downloading the installer?
+A double click on the downloaded exe file. It will install jdk in your system.
+
+
+Q Where we can check the installation?
+A C:\Program Files\Java
+
+Q Still we are not able to check the version with java -version.
+A To see the output of the command we have to set the path for the installation.
+
+------------------------------------------------------------------------------------
+Q Do we need both .java and .class file for executing our java code?
+A No. We only need the .class file for executing the code.
+
+------------------------------------------------------------------------------------
+Q So when we require both the files?
+A When we are the coder and we want to write and modify the code and we want to execute the code.
+  Then we require both source code(.java) and the code to be executed which is in the file .class extension.
+------------------------------------------------------------------------------------------------------
+
+Q From where we can download the eclipse IDE?
+A https://www.eclipse.org/downloads/
+
+Q While installation which one to choose?
+A Eclipse IDE for Java developers.
+
+Q After download what we need to do?
+A We need to extract the downloaded zipped file.
+
+Q What happens after extraction of zipped file?
+A it creates a folder with the name eclipse.
+
+Q How to start the eclipse application?
+A We get an eclipse.exe which we can double click to start the IDE working and even we can create a desktop
+shortcut if the shortcut is not created on the desktop.
+
+Q After starting the application what we do?
+A We get an eclipse IDE launcher dialog box.Where we mention the workspace path.
+We wont alter the workspace path.The default path is 
+C:\Users\PERSONAL\eclipse-workspace.Then click on launch.
 
 
 
 
+Q What is workspace?
+A Workspace contains all the project folders. So basically an workspace is a collection of project folders.
+
+Q What we do next?
+A We need to create a java project with any name.
+File ====> New =====> Java Project====> provide a project name for example we gave the 
+project name as first and click on finish button.
+
+Q What we need to do next after creating the workspace and project?
+A We need to create a java file which will have the code.
+Right click on the project name shown in the package explorer---->New-----> class--->
+Provide the class name.
+Check the checkbox for having main. 
+
+Q What next?
+A we complete the code in the code editor.
+
+
+Q What next?
+A Right click on the code editor===> Run as java application. We will be able to see
+the output on the console window.
+
+
+
+------------------------------------------------------------------------------------------------
 
 
 
