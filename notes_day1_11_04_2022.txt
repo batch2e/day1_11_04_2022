@@ -1,0 +1,382 @@
+Generic Training
+
+1) Programming using Java
+ trainees====>https://lex.infosysapps.com
+ trainers===> https://wingspan.infosysapps.com
+ Eclipse ===> Which will help us to write the Java code and also executing the code.
+ Lex =====> Lex is a site where we can write the Java code and execute the code.
+ For Eclipse download , the link will be shared by the batch owner.
+How to write a program by using a language that is Java.
+-----------------------------------------------------------------------------------------------------------
+
+8 days + 1 day for practice and mock assessment
+2) DBMS
+4 days + 1 day for practice and mock assessment
+3) Cyber security and Cloud computing 
+1 day====> theory session
+4) final assessment 
+   1 st day ===> Objective for both Programming and DBMS
+   2nd day===--> HON Programming and DBMS
+------------------------------------------------------------------------------------------------------------
+Q What is a program/code?
+A set of instructions.
+
+Q How dow we write a program/code?
+A We have to select and go with a programming language.
+
+Q What is a programming language?
+A A programming language is a language which is understood by a compiler(it converts the code from higher 
+level language to machine level language) and ultimately converted into a set of instructions given to 
+the system in the form of machine level language. 
+
+Q Give some examples of programming languages
+A C,C++,Python,Java,C#,VB DOTNET.
+
+---------------------------------------------------------------------------------------------------------------
+
+Q How we write a program or what are the building blocks of a programming language?
+* keywords===> keywords are the vocabulary of the programming language which is understood by the compiler.
+  So every programming language is having its set of vocabulary. 
+* datatypes===> datatypes decide what type of values we can use or address like . Are we planning to
+  store a number or we are planning to store a character like a or b or c. Or we are planning to
+  store a String ( a group of characters ===> example name of a person like Ashok or designation Analyst)
+* variables====> variables are used to store the data or hold the data.They are called as variables
+  because they can store different values on different executional point.
+   int num;
+   a bottle is similar to num.
+   1 liter is similar to int.
+   a bottle of 1 liter is similar to int num;
+   1 liter bottle is having water which is similar to num=10;
+   num=20;  That means we have changed the value which is similar to 1 liter of bottle is now stored
+   with 1 liter of milk.
+  
+    
+  In the above line int is a datatype and num is a variable. Which means num variable can store the 
+  data of numeric(number) type.
+  num=10;
+* programming constructs like===>
+  **decision making==> if it is raining today 
+                        I will take an umbrella
+                     if it is raining heavily 
+                        I will take a raincoat
+                     otherwise 
+                        I won't take umbrellar or the raincoat
+
+   When you make a customer call===> They say something like press 1 for english
+   press 2 for hindi
+    
+  **Iterations/loops(Repeated task):-
+   We eat, We sleep, We attend the session
+------------------------------------------------------------------------------------------------------------* identifiers/names===> We all have names. name of a person. model name of a car. model name of a laptop.
+---------------------------------------------------------------------------------------------------------------
+* operators ( operations )====> adding , multiplying , subtract
+--------------------------------------------------------------------------------------------------------------- conversion ( converting from one datatype to another)====> from water we created ice( this is an example
+where we converted liquid into a solid). We will talk about datatype conversion. 
+--------------------------------------------------------------------------------------------------------------
+
+ We have a bottle of 1 ltr and we need to store water in it and after sometime we need to store a litr of milk.
+
+     1. 1 litr bottle.
+     2. bottle containing water.
+     3. we will throw the water out of the bottle.
+     4. We will store milk in the bottle.
+
+      int num; // step 1
+      num=10;  // step 2
+      num=20; // step 3 and step4
+
+   We have declared a variable of int type and then we stored the value 10 and latter the value within
+   num os overwritten by the value 20.
+ ----------------------------------------------------------------------------------------------------------
+
+class Welcome {
+	public static void main(String[] args) {
+		System.out.println("Hello World! Welcome to Java Programming!");
+	}
+}
+--------------------------------------------------------------------------------------------------
+How to write a simple java code/program?
+1)  write a class with an identifier/name with opening({) and closing(}) braces. 
+
+   class Welcome{}        
+
+* class is a keyword for defining a block. 
+* Student can be taken as class. Which means Student class/category which can be related with a set of attributes. Attributes related with student can be roll number, name , class/standard. A set of behaviours/actions. Actions/behaviours study, writing exam.
+class Student{}
+class Employee{}
+class Book{}
+
+2)
+ a) We need to define a method/function withing the class. That method is the main method.main method is the
+entry point of execution for the Java code.
+main is a method with opening ({) and closing (}) braces. 
+ 
+class Welcome {
+    main(){
+
+    }
+
+}      
+b) with the main method we need to have the return type and the parameters.
+  Example can be if cooking is a method/process/action. For cooking the cook or the chef needs to be provided
+  with the raw material like vegetables,spices,oil etc and after cooking ( processing ==> different steps /
+  stages of cooking) the chef/cook will return the cooked food.
+
+ 1) cooking is a method
+ 2) the raw materials are like the inputs/parameters to the cooking method.
+ 3) The cooked food is the output returned by the process cooking.
+
+ class Welcome {
+    void main(String args[]){
+
+    }
+  }
+main is like cooking.
+String args[] is like the inputs/parameters to the main and as we know main is similar to cooking.
+void is the return type just like the return processed/cooked food is from the cooking process.
+void means returning nothing. So it would be similar to if the cook is cooking the food with raw items
+and he/she is not returning the cooked food but consuming the cooked food.
+void means the method is not returning any value. 
+Here in the parameter String is a type/data types args is like variable and [] are used for array. 
+array is just like a tray for storing eggs. String args[] means args is an array of String type.
+int num[] we say as num is an array of int type.
+
+class Cook {
+   void cooking ( egg1,egg2,egg3,egg4){
+
+   }
+ }
+
+class Cook {
+   void cooking ( tray of eggs ) {
+
+   }
+
+ }
+
+c) We have to use public and static with the main method. public means the method is accessible everywhere.
+   and static means we have only one action at a time. 
+
+class Welcome {
+   public static void main(String args[]){
+
+   } 
+ }  
+
+so if the cooking process is witnessed by other entities , then we say it as with public access.
+and static is we will be having only one process for the food ordered.
+
+3) We need to do something within the main method.
+   In our case we are going to print Hello World! Welcome to Java Programming!
+
+class Welcome {
+   public static void main(String args[]){
+                      Hello World! Welcome to Java Programming!
+   } 
+ }  
+The above code is not fine until unless we give the instruction to print.
+   System.out.println();
+
+class Welcome {
+   public static void main(String args[]){
+             System.out.println("Hello World! Welcome to Java Programming!");
+   } 
+ }  
+Observations: 
+{} are there ===> to represent the opening and closing of a block. Class is a block and main is also a 
+   block.
+[] ==========> This is used to represent the array.
+class,public,static,void ========> keywords. In java keywords are written is smallcase. If we are not
+writing the keywords in smallcase , we get compilation error.
+JAVA IS A CASE SENSITIVE LANGUAGE. So we have to be careful while writng the keywords and the predefined
+classes.
+
+Welcome,main,println,out,args,String,System=====> Welcome,String and System are classes. Welcome class is a 
+is a user defined class whereas String and System are predefined classes. 
+
+main is a method which is the entry point of the java code.
+println is again a method which is predefined.
+out is an object/variable withing the System class.
+args is again a variable/object name.
+
+Hello World! Welcome to Java Programming!====> is a string and we are enclosing it within "".
+
+Every executable statement should end up with ; which marks the end of a statement.
+Every block should end up with closing brace (}).
+
+Class name should start with Uppercase followed by lowercase.
+example Student, Employee, Book, Welcome
+If a class name consists of multiple words, Every word's first character should be in uppercase example
+StudentDetails, EmployeeDetails
+
+methods and object/variable names 
+
+If the method or the object/variable is having single word , then all the characters are in smallcase.
+
+example main(), display(), show()
+
+same is with the variable and object. example
+
+num, name, args
+
+If the method or the object/variable is having multiple words, then the first word's all the characters
+in lowercase and the second word onwards, first character is in uppercase example
+
+ displayData(), showDetails().
+
+Same is with the variable and object names.
+
+employeeName, studentName.
+------------------------------------------------------------------------------------------------------------- 
+Common mistakes
+
+Class Welcome {
+	public static void main(String[] args) {
+		System.out.println("Hello World! Welcome to Java Programming!");
+	}
+}
+// Here the keyword class is starting with uppercase.
+
+
+class welcome {
+	public static void main(String[] args) {
+		System.out.println("Hello World! Welcome to Java Programming!");
+	}
+}
+// Currently no error because writing the class name starting with uppercase is a convention. Convention 
+we may follow or we may skip.But it is always good to follow the convention.
+
+class welcome {
+	public static void main(string[] args) {
+		system.out.println("Hello World! Welcome to Java Programming!");
+	}
+}
+
+ We get compilation error because we cannot afford writing the predefined classes starting with lowercase
+but we can write user defined classes starting with lowercase but we should avoid as it is not the convention.
+Conclusion is for user defined classes we may follow or skip the convention but for predefined classes 
+like System and String we have to follow the convention as it becomes mandatory to follow the convention
+otherwise it gives compilation error.
+
+class welcome {
+	public static void main(String[] STR) {
+		System.out.println("Hello World! Welcome to Java Programming!");
+	}
+}
+
+
+str/args is user defined and we can follow any case but convention is writing it in smallcase.
+
+
+class welcome {
+	public static void main(String[] ARGS) {
+		System.Out.println("Hello World! Welcome to Java Programming!");
+	}
+}
+out is a predefined object or a variable , we cannot change the case for out.
+
+
+main and println should be in smallcase
+
+
+class welcome {
+	public static void Main(String[] ARGS) {
+		System.out.println("Hello World! Welcome to Java Programming!");
+	}
+}
+
+//So no compilation error but no output. 
+
+class welcome {
+	public static void main(String[] ARGS) {
+		System.out.Println("Hello World! Welcome to Java Programming!");
+	}
+}
+above code will show compilation error as println is a predefined method which cannot start with uppercase.
+
+------------------------------------------------------------------------------------------------------------
+  
+class Welcome {
+	public static void main(String[] args) {
+		System.out.println("Hello World! Welcome to Java Programming!");
+	}
+}
+System.out.println is similar to printf in C and cout in C++
+--------------------------------------------------------------------------------------------------------------
+Some of the points related to the java coding:
+
+1) Every method will be within the class.
+2) Every code should have atleast one main method for executing the code or the program.
+3) Statements should end up with ;.
+4) blocks like class and methods should start with { (opening brace ) and should end up with } (closing brace).
+5) Write the class name starting with uppercase followed by all smallcase characters.
+6) If the class is having multiple words, every word's first character will be in uppercase.
+7) the methods and variables,objects should be written entirely in smallcase if it is having a single word.
+8) for multiple words method and variables/objects first word entirely in smallcase and second word onwards
+   first character in uppercase and rest character in lowercase.
+
+class Welcome {
+	public static void main(String[] args) {
+	   int studentMarks=80;	
+           int marks=90;
+           System.out.println(studentMarks);
+	   System.out.println(marks);
+       }
+}
+// println will take the cursor into the nextline before executing the next statement
+Output: 
+   80
+   90
+
+
+class Welcome {
+	public static void main(String[] args) {
+	   int studentMarks=80;	
+           int marks=90;
+           System.out.print(studentMarks);
+	   System.out.print(marks);
+       }
+}
+// print keeps the cursor on the same line after printing the output
+
+8090
+
+
+class Welcome {
+	public static void main(String[] args) {
+	   int studentMarks=80;	
+           int marks=90;
+           System.out.print("studentMarks");
+	   System.out.print("marks");
+       }
+}
+
+studentMarksmarks
+
+// We dont put variable names within quotes . If we are putting them within quotes they are displayed
+as String and they are not considered as variable name and so we are not able to see the value stored
+int the variable.
+
+
+class Welcome {
+	public static void main(String[] args) {
+	   int studentMarks=80;	
+           int marks=90;
+           System.out.println("studentMarks "+studentMarks);
+	   System.out.println("marks "+marks);
+       }
+}
+
+
++ is used for concatenation with a string.
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
